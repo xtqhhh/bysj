@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.gov.security.property.LoginLockPropertyTest" time="56.895" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\桌面\bysj\backend\target\test-classes;D:\桌面\bysj\backend\target\classes;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\apache-maven-3.9.10\maven-rope\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\apache-maven-3.9.10\maven-rope\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\apache-maven-3.9.10\maven-rope\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-api\0.12.6\jjwt-api-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-impl\0.12.6\jjwt-impl-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-jackson\0.12.6\jjwt-jackson-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\apache-maven-3.9.10\maven-rope\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\apache-maven-3.9.10\maven-rope\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\apache-maven-3.9.10\maven-rope\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik\1.8.4\jqwik-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-api\1.8.4\jqwik-api-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-web\1.8.4\jqwik-web-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-time\1.8.4\jqwik-time-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-engine\1.8.4\jqwik-engine-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin"/>
+    <property name="sun.java.command" value="C:\Users\xtq\AppData\Local\Temp\surefire15468174960934959286\surefirebooter-20260406230725298_3.jar C:\Users\xtq\AppData\Local\Temp\surefire15468174960934959286 2026-04-06T23-07-25_120-jvmRun1 surefire-20260406230725298_1tmp surefire_0-20260406230725298_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\桌面\bysj\backend\target\test-classes;D:\桌面\bysj\backend\target\classes;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\apache-maven-3.9.10\maven-rope\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\apache-maven-3.9.10\maven-rope\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\apache-maven-3.9.10\maven-rope\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-api\0.12.6\jjwt-api-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-impl\0.12.6\jjwt-impl-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-jackson\0.12.6\jjwt-jackson-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\apache-maven-3.9.10\maven-rope\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\apache-maven-3.9.10\maven-rope\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\apache-maven-3.9.10\maven-rope\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik\1.8.4\jqwik-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-api\1.8.4\jqwik-api-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-web\1.8.4\jqwik-web-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-time\1.8.4\jqwik-time-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-engine\1.8.4\jqwik-engine-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\xtq"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\桌面\bysj\backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\xtq\AppData\Local\Temp\surefire15468174960934959286\surefirebooter-20260406230725298_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.5+9-LTS-191"/>
+    <property name="user.name" value="xtq"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\apache-maven-3.9.10\maven-rope"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\xtq\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.5"/>
+    <property name="user.dir" value="D:\桌面\bysj\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;D:\vmware\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\mingw64\bin;D:\Windows Kits\10\Windows Performance Toolkit\;D:\tools\xshell\xshell\;D:\tools\xshell\xftp\;D:\phpstudy_pro\Extensions\php\php7.3.4nts;C:\ProgramData\ComposerSetup\bin;D:\MySQL\MySQL Server 8.0\bin\;D:\apache-maven-3.9.10\bin;C:\Program Files\Java\jdk-17.0.5\bin;D:\git\Git\cmd;D:\Redis\Redis-x64-5.0.9;C:\Users\xtq\AppData\Local\nvm;C:\nvm4w\nodejs;D:\nodejs;C:\Program Files\Common Files\Oracle\Java\javapath;D:\vmware\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\mingw64\bin;D:\Windows Kits\10\Windows Performance Toolkit\;D:\tools\xshell\xshell\;D:\tools\xshell\xftp\;D:\phpstudy_pro\Extensions\php\php7.3.4nts;C:\ProgramData\ComposerSetup\bin;D:\MySQL\MySQL Server 8.0\bin\;D:\apache-maven-3.9.10\bin;C:\Program Files\Java\jdk-17.0.5\bin;D:\git\Git\cmd;D:\Redis\Redis-x64-5.0.9;C:\Users\xtq\AppData\Local\nvm;C:\nvm4w\nodejs;D:\nodejs\node_modules\pnpm\bin;C:\Users\xtq\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\xtq\AppData\Local\Programs\Python\Python314\;D:\MySQL\MySQL Shell 8.0\bin\;C:\Users\xtq\AppData\Loc;D:\nodejs\node_modules\pnpm\bin;D:\Microsoft VS Code\bin;D:\qoder\Qoder\bin;D:\kiro\Kiro\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="accountLockedAfterFiveFailures" classname="com.gov.security.property.LoginLockPropertyTest" time="40.688">
+    <system-out><![CDATA[23:07:34.568 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=tzhbpucc
+23:07:34.953 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=mcpl
+23:07:35.379 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zdlbkmlky
+23:07:35.767 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=otydtzvusxi
+23:07:36.153 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=kljqa
+23:07:36.557 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zkqk
+23:07:36.964 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=jknqpeuzqnd
+23:07:37.355 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=yemrh
+23:07:37.743 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=ewc
+23:07:38.136 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=pzf
+23:07:38.541 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=soouk
+23:07:38.927 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=qfnm
+23:07:39.307 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=vlkrbzpwhyf
+23:07:39.722 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=pfq
+23:07:40.106 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=aaa
+23:07:40.486 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=fneo
+23:07:40.868 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=mdbwcsfrznddvhl
+23:07:41.281 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=vgnwuhsjplk
+23:07:41.678 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=cmcs
+23:07:42.064 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=aidi
+23:07:42.471 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=bpubfjszl
+23:07:42.866 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=mvc
+23:07:43.248 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zjyb
+23:07:43.629 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=tgsezyllmhxkgx
+23:07:44.030 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=iwzruduivrqyoaryv
+23:07:44.410 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=aaa
+23:07:44.800 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=bypansrbmhyom
+23:07:45.183 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=nkegzhkhccaka
+23:07:45.576 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=exeitjyie
+23:07:45.959 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=bpaguyvraysj
+23:07:46.348 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=mhfszpaidhgkurlhpw
+23:07:46.745 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=hxzvhhzt
+23:07:47.136 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=klsdmekdzjtcezeikc
+23:07:47.545 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=tazjxnwkoq
+23:07:47.929 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=khqivzmuic
+23:07:48.350 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=conrwpymnpzrahoc
+23:07:48.740 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=xxpc
+23:07:49.123 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=rvivkt
+23:07:49.504 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=lemaamiyeoc
+23:07:49.916 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zzz
+23:07:50.306 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=cxiyjp
+23:07:50.688 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=wqskpolvbgchnemrtz
+23:07:51.066 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=jouvhgdgb
+23:07:51.458 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=xkkwnwxid
+23:07:51.851 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=wpdgxyxgidoygufniosp
+23:07:52.238 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=vvcuvtam
+23:07:52.649 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=irzhfbihtbnny
+23:07:53.041 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=sndnjzrq
+23:07:53.426 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=ksk
+23:07:53.819 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zzz
+23:07:54.217 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=nmh
+23:07:54.602 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=fnmvjltvca
+23:07:54.996 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=csdxlygm
+23:07:55.390 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=riujlzwwfzig
+23:07:55.785 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=fgtgdjghqk
+23:07:56.170 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=cfshrdvfih
+23:07:56.559 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=urvy
+23:07:56.963 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=ioskqbtxqgg
+23:07:57.360 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=fdfeqekkqhbseqk
+23:07:57.745 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=vizl
+23:07:58.132 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=bncb
+23:07:58.534 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=qliesx
+23:07:58.926 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=qcntimzxauq
+23:07:59.308 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=fqzstexnxml
+23:07:59.705 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=eyikhdjf
+23:08:00.110 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=uzhagfb
+23:08:00.500 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=xnoqtgfqtlflseujtho
+23:08:00.880 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=kwzxehrumv
+23:08:01.275 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=ogx
+23:08:01.670 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=ocjj
+23:08:02.064 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=updselenfamdp
+23:08:02.457 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=ogroixviv
+23:08:02.879 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=eqgrccibvswdxmrgzyqa
+23:08:03.269 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=riwmkexbbzqwdikjhgux
+23:08:03.656 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zzz
+23:08:04.056 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zfwj
+23:08:04.477 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=nkwm
+23:08:04.875 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=flvagbiytwzumd
+23:08:05.296 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=gcmmtp
+23:08:05.730 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=pfn
+23:08:06.118 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=jovwvqiwm
+23:08:06.513 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=txpyplqtrqxfozvdp
+23:08:06.953 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=hvbvrgejaerox
+23:08:07.508 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=wlvwv
+23:08:07.986 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=vzgcb
+23:08:08.440 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=zdb
+23:08:08.900 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=sydfue
+23:08:09.319 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=nocdtpngv
+23:08:09.733 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=gri
+23:08:10.286 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=fargbal
+23:08:10.791 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=ior
+23:08:11.311 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=wssw
+23:08:11.721 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=cnruelqwuertl
+23:08:12.180 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=jzoiawotb
+23:08:12.658 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=hxbqle
+23:08:13.093 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=wtmup
+23:08:13.529 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=xulqk
+23:08:13.994 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=aaa
+23:08:14.436 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=pysimojpvob
+23:08:14.826 [main] WARN com.gov.security.service.AuthService -- 账号已被锁定: username=swjcrqzb
+timestamp = 2026-04-06T23:08:14.827130100, LoginLockPropertyTest:accountLockedAfterFiveFailures = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 2          | # of all combined edge cases
+edge-cases#tried = 2          | # of edge cases tried in current run
+seed = -4585219508543153354   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="successfulLoginClearsFailCount" classname="com.gov.security.property.LoginLockPropertyTest" time="16.207">
+    <system-out><![CDATA[23:08:14.963 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=zotupacjcob
+23:08:15.093 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=virhluht
+23:08:15.249 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=sllkbgbrqu
+23:08:15.378 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=fwkrzyn
+23:08:15.511 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=umasmiwseo
+23:08:15.644 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=twgctmwsrcur
+23:08:15.777 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=aaa
+23:08:15.905 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=awpoyeiewmlrc
+23:08:16.034 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=voxrbdpmrymp
+23:08:16.165 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=zzz
+23:08:16.295 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=fxzkdl
+23:08:16.424 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=gughnx
+23:08:16.558 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=htua
+23:08:16.702 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=tkx
+23:08:16.879 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=wktcon
+23:08:17.065 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=zzz
+23:08:17.205 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=vsjlmt
+23:08:17.348 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ciqjdvl
+23:08:17.480 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=sgiqsbtsin
+23:08:17.610 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=mjyemjue
+23:08:17.741 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=mclfrxe
+23:08:17.874 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=kqjymhi
+23:08:18.013 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=unj
+23:08:18.157 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ocorsf
+23:08:18.315 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=janebelosz
+23:08:18.450 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=pthe
+23:08:18.585 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=uhawc
+23:08:18.725 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=msdvhga
+23:08:18.862 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=oqlbfbhl
+23:08:19.013 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=jdqnxdtbwiyhx
+23:08:19.164 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=xyjeq
+23:08:19.314 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=wfwooyukxoxkno
+23:08:19.459 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=mqp
+23:08:19.602 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=wzfejaeday
+23:08:19.783 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=abcarenuwsueiuxw
+23:08:19.932 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=myixpzshhkseeukf
+23:08:20.107 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=uei
+23:08:20.263 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=kwhfqhcohraq
+23:08:20.426 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=cifx
+23:08:20.610 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ljv
+23:08:20.771 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=gesyg
+23:08:20.926 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=butxanvlmh
+23:08:21.081 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=rjuniau
+23:08:21.222 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=whwgddfqfauvatazab
+23:08:21.367 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=imthdsrq
+23:08:21.533 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=nswsvyxudrhhy
+23:08:21.679 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=wgcjdcxvlf
+23:08:21.827 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=xmjthjnixufhhlo
+23:08:21.996 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=pbews
+23:08:22.164 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ysw
+23:08:22.328 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=bsjbeuetkws
+23:08:22.467 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=vklsxlxahqyn
+23:08:22.599 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=cmhdu
+23:08:22.742 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=yjivtxxqqbg
+23:08:22.893 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=mxstsjzep
+23:08:23.094 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=iwtvjztjzkpb
+23:08:23.246 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=awcfzao
+23:08:23.394 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=dbgvkb
+23:08:23.539 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=vbi
+23:08:23.686 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=gthotcygtlbclwej
+23:08:23.833 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=awrstgsivdylqtkia
+23:08:23.996 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=rdf
+23:08:24.169 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=udqanozcpvwrfjy
+23:08:24.337 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=scoxabnwhqrdw
+23:08:24.541 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ftghmjbrm
+23:08:24.770 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=stalomxswko
+23:08:24.994 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=xsum
+23:08:25.181 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=lfuupqimvz
+23:08:25.354 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=lrhyqb
+23:08:25.514 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=rqpdbpfranzx
+23:08:25.680 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=qwkyhbtmp
+23:08:25.843 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=kgooil
+23:08:26.051 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=halwwe
+23:08:26.226 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=maptmeppimwufcixcvdm
+23:08:26.380 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=tnujr
+23:08:26.645 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=tdixrofnvum
+23:08:26.829 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ftzhsowam
+23:08:27.036 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=onelz
+23:08:27.225 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=wcaqkdni
+23:08:27.393 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=dvxxcqs
+23:08:27.544 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=qwxe
+23:08:27.737 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=leuscchfdvcirbgtab
+23:08:27.952 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=abwe
+23:08:28.151 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=lxwrgmbfbzrdfbpgovfy
+23:08:28.384 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=iwwg
+23:08:28.542 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=yajejaki
+23:08:28.717 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ubmpvht
+23:08:28.907 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=mqnaylt
+23:08:29.128 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=pixvrgydbb
+23:08:29.306 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=zdprvzz
+23:08:29.471 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=atrqctrjba
+23:08:29.635 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=pblurcbw
+23:08:29.821 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=mtqripglasbkcdyv
+23:08:29.992 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=eswynnxiq
+23:08:30.196 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=uxwymb
+23:08:30.363 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=ngulftbmkpt
+23:08:30.545 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=goapxbzrbaivt
+23:08:30.726 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=tmiupuq
+23:08:30.886 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=hswmoixee
+23:08:31.032 [main] INFO com.gov.security.service.AuthService -- 用户登录成功: username=uxoxz
+timestamp = 2026-04-06T23:08:31.033386, LoginLockPropertyTest:successfulLoginClearsFailCount = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 2          | # of all combined edge cases
+edge-cases#tried = 2          | # of edge cases tried in current run
+seed = -7467750602277048552   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+</testsuite>

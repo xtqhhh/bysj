@@ -1,0 +1,10 @@
+com\gov\security\unit\PermissionUnitTest.class
+com\gov\security\property\AccessControlPropertyTest.class
+com\gov\security\property\PasswordEncoderPropertyTest.class
+com\gov\security\unit\AuthServiceUnitTest.class
+com\gov\security\unit\PasswordEncoderUnitTest.class
+com\gov\security\property\XssFilterPropertyTest.class
+com\gov\security\property\RegistrationPropertyTest.class
+com\gov\security\unit\TokenManagerUnitTest.class
+com\gov\security\property\AuditLogPropertyTest.class
+com\gov\security\property\LoginLockPropertyTest.class

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gov.security.mapper.AuditLogMapper">
+
+    <resultMap id="AuditLogResultMap" type="com.gov.security.entity.AuditLog">
+        <id property="id" column="id"/>
+        <result property="operatorId" column="operator_id"/>
+        <result property="operatorName" column="operator_name"/>
+        <result property="operationType" column="operation_type"/>
+        <result property="requestIp" column="request_ip"/>
+        <result property="operationTime" column="operation_time"/>
+        <result property="result" column="result"/>
+        <result property="beforeData" column="before_data"/>
+        <result property="afterData" column="after_data"/>
+    </resultMap>
+
+    <sql id="whereClause">
+        <where>
+            <if test="operatorId != null">
+                AND operator_id = #{operatorId}
+            </if>
+            <if test="type != null and type != ''">
+                AND operation_type = #{type}
+            </if>
+            <if test="startTime != null and startTime != ''">
+                AND operation_time &gt;= #{startTime}
+            </if>
+            <if test="endTime != null and endTime != ''">
+                AND operation_time &lt;= #{endTime}
+            </if>
+        </where>
+    </sql>
+
+    <select id="findPage" resultMap="AuditLogResultMap">
+        SELECT id, operator_id, operator_name, operation_type, request_ip,
+               operation_time, result, before_data, after_data
+        FROM audit_log
+        <include refid="whereClause"/>
+        ORDER BY operation_time DESC
+        LIMIT #{size} OFFSET #{offset}
+    </select>
+
+    <select id="countPage" resultType="java.lang.Long">
+        SELECT COUNT(*)
+        FROM audit_log
+        <include refid="whereClause"/>
+    </select>
+
+</mapper>

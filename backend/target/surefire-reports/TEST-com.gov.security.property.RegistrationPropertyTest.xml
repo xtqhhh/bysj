@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.gov.security.property.RegistrationPropertyTest" time="7.019" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\桌面\bysj\backend\target\test-classes;D:\桌面\bysj\backend\target\classes;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\apache-maven-3.9.10\maven-rope\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\apache-maven-3.9.10\maven-rope\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\apache-maven-3.9.10\maven-rope\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-api\0.12.6\jjwt-api-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-impl\0.12.6\jjwt-impl-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-jackson\0.12.6\jjwt-jackson-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\apache-maven-3.9.10\maven-rope\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\apache-maven-3.9.10\maven-rope\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\apache-maven-3.9.10\maven-rope\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik\1.8.4\jqwik-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-api\1.8.4\jqwik-api-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-web\1.8.4\jqwik-web-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-time\1.8.4\jqwik-time-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-engine\1.8.4\jqwik-engine-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin"/>
+    <property name="sun.java.command" value="C:\Users\xtq\AppData\Local\Temp\surefire15468174960934959286\surefirebooter-20260406230725298_3.jar C:\Users\xtq\AppData\Local\Temp\surefire15468174960934959286 2026-04-06T23-07-25_120-jvmRun1 surefire-20260406230725298_1tmp surefire_0-20260406230725298_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\桌面\bysj\backend\target\test-classes;D:\桌面\bysj\backend\target\classes;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\apache-maven-3.9.10\maven-rope\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-security\3.2.5\spring-boot-starter-security-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-config\6.2.4\spring-security-config-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;D:\apache-maven-3.9.10\maven-rope\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\apache-maven-3.9.10\maven-rope\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-data-redis\3.2.5\spring-boot-starter-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-common\4.1.109.Final\netty-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-handler\4.1.109.Final\netty-handler-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-resolver\4.1.109.Final\netty-resolver-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-buffer\4.1.109.Final\netty-buffer-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport-native-unix-common\4.1.109.Final\netty-transport-native-unix-common-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-codec\4.1.109.Final\netty-codec-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\netty\netty-transport\4.1.109.Final\netty-transport-4.1.109.Final.jar;D:\apache-maven-3.9.10\maven-rope\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;D:\apache-maven-3.9.10\maven-rope\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-redis\3.2.5\spring-data-redis-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-keyvalue\3.2.5\spring-data-keyvalue-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-oxm\6.1.6\spring-oxm-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\apache-maven-3.9.10\maven-rope\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\apache-maven-3.9.10\maven-rope\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-api\0.12.6\jjwt-api-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-impl\0.12.6\jjwt-impl-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\io\jsonwebtoken\jjwt-jackson\0.12.6\jjwt-jackson-0.12.6.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\apache-maven-3.9.10\maven-rope\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;D:\apache-maven-3.9.10\maven-rope\org\apache\commons\commons-pool2\2.12.0\commons-pool2-2.12.0.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;D:\apache-maven-3.9.10\maven-rope\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\apache-maven-3.9.10\maven-rope\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\apache-maven-3.9.10\maven-rope\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\apache-maven-3.9.10\maven-rope\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\apache-maven-3.9.10\maven-rope\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;D:\apache-maven-3.9.10\maven-rope\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\apache-maven-3.9.10\maven-rope\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\apache-maven-3.9.10\maven-rope\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\apache-maven-3.9.10\maven-rope\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;D:\apache-maven-3.9.10\maven-rope\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik\1.8.4\jqwik-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-api\1.8.4\jqwik-api-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-web\1.8.4\jqwik-web-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-time\1.8.4\jqwik-time-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\net\jqwik\jqwik-engine\1.8.4\jqwik-engine-1.8.4.jar;D:\apache-maven-3.9.10\maven-rope\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\xtq"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\桌面\bysj\backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\xtq\AppData\Local\Temp\surefire15468174960934959286\surefirebooter-20260406230725298_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.5+9-LTS-191"/>
+    <property name="user.name" value="xtq"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\apache-maven-3.9.10\maven-rope"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\xtq\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.5"/>
+    <property name="user.dir" value="D:\桌面\bysj\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;D:\vmware\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\mingw64\bin;D:\Windows Kits\10\Windows Performance Toolkit\;D:\tools\xshell\xshell\;D:\tools\xshell\xftp\;D:\phpstudy_pro\Extensions\php\php7.3.4nts;C:\ProgramData\ComposerSetup\bin;D:\MySQL\MySQL Server 8.0\bin\;D:\apache-maven-3.9.10\bin;C:\Program Files\Java\jdk-17.0.5\bin;D:\git\Git\cmd;D:\Redis\Redis-x64-5.0.9;C:\Users\xtq\AppData\Local\nvm;C:\nvm4w\nodejs;D:\nodejs;C:\Program Files\Common Files\Oracle\Java\javapath;D:\vmware\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\mingw64\bin;D:\Windows Kits\10\Windows Performance Toolkit\;D:\tools\xshell\xshell\;D:\tools\xshell\xftp\;D:\phpstudy_pro\Extensions\php\php7.3.4nts;C:\ProgramData\ComposerSetup\bin;D:\MySQL\MySQL Server 8.0\bin\;D:\apache-maven-3.9.10\bin;C:\Program Files\Java\jdk-17.0.5\bin;D:\git\Git\cmd;D:\Redis\Redis-x64-5.0.9;C:\Users\xtq\AppData\Local\nvm;C:\nvm4w\nodejs;D:\nodejs\node_modules\pnpm\bin;C:\Users\xtq\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\xtq\AppData\Local\Programs\Python\Python314\;D:\MySQL\MySQL Shell 8.0\bin\;C:\Users\xtq\AppData\Loc;D:\nodejs\node_modules\pnpm\bin;D:\Microsoft VS Code\bin;D:\qoder\Qoder\bin;D:\kiro\Kiro\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="weakPasswordThrowsExceptionOnRegister" classname="com.gov.security.property.RegistrationPropertyTest" time="0.163">
+    <system-out><![CDATA[timestamp = 2026-04-06T23:08:45.624461100, RegistrationPropertyTest:weakPasswordThrowsExceptionOnRegister = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 2          | # of all combined edge cases
+edge-cases#tried = 2          | # of edge cases tried in current run
+seed = -8260469896331634248   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="lettersOnlyPasswordIsRejected" classname="com.gov.security.property.RegistrationPropertyTest" time="0.007">
+    <system-out><![CDATA[timestamp = 2026-04-06T23:08:45.631473300, RegistrationPropertyTest:lettersOnlyPasswordIsRejected = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 2          | # of all combined edge cases
+edge-cases#tried = 2          | # of edge cases tried in current run
+seed = -7606689596550102487   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="registeredUserHasRoleCitizen" classname="com.gov.security.property.RegistrationPropertyTest" time="6.837">
+    <system-out><![CDATA[23:08:45.710 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=pznrirnv
+23:08:45.781 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=djkobibwogltzbgc
+23:08:45.849 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=njnktuct
+23:08:45.915 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=vcbxyhudkeens
+23:08:45.982 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=imuxxkkxmy
+23:08:46.054 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=qhacuvywjnqjz
+23:08:46.121 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=gneybhe
+23:08:46.189 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=fxnakkijse
+23:08:46.254 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=zbckqe
+23:08:46.319 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=kkkmtsr
+23:08:46.386 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=cdssbnbj
+23:08:46.450 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=gflijkvp
+23:08:46.516 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=fhukshppwu
+23:08:46.582 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=hvtiid
+23:08:46.646 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=pzkdnxwhvlvry
+23:08:46.713 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=bfducemnxtcjp
+23:08:46.777 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=zyaapzpbbxor
+23:08:46.843 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=kjmqxr
+23:08:46.909 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=vgkukqzcj
+23:08:46.975 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=qjfwwg
+23:08:47.045 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=ezt
+23:08:47.126 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=mdcrhmmhw
+23:08:47.192 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=gptopxzvaoynytesb
+23:08:47.260 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=wpfwnfn
+23:08:47.326 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=yvjkyaobuzc
+23:08:47.392 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=vkubfgjwvitsemrrpnmt
+23:08:47.466 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=zzz
+23:08:47.533 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=edhwgzm
+23:08:47.600 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=eheesmsgo
+23:08:47.675 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=ufwhvmsei
+23:08:47.741 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=plgiaekus
+23:08:47.807 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=fxzkiw
+23:08:47.879 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=omyiusgkw
+23:08:47.952 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=wltembsccfv
+23:08:48.021 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=jaryt
+23:08:48.088 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=wvzmkyclckxukehqgt
+23:08:48.154 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=roupzvql
+23:08:48.227 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=cwgbkjdfp
+23:08:48.296 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=wmjocombzaxa
+23:08:48.361 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=cnkvexmwkau
+23:08:48.432 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=nynahhgqtgz
+23:08:48.547 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=zzz
+23:08:48.616 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=sgcjfixnoiboxxlnx
+23:08:48.686 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=lvoocwwt
+23:08:48.757 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=mozjgq
+23:08:48.830 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=tmwlqckdheobvirgzjau
+23:08:48.901 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=ruapioprwanxv
+23:08:48.975 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=bwsabp
+23:08:49.052 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=zkxjxbydi
+23:08:49.122 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=svzag
+23:08:49.185 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=bnowkys
+23:08:49.249 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=wvuyfbfub
+23:08:49.322 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=ojhxpotkosk
+23:08:49.388 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=blzzmtmtfejox
+23:08:49.455 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=edgmvh
+23:08:49.519 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=pacr
+23:08:49.587 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=klsr
+23:08:49.657 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=cshdcglyeoqdlxvps
+23:08:49.721 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=wfueqgvvpey
+23:08:49.787 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=mxg
+23:08:49.852 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=yfh
+23:08:49.917 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=zzz
+23:08:49.980 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=sywdq
+23:08:50.058 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=rksbm
+23:08:50.123 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=ryng
+23:08:50.190 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=hlpziyyjbz
+23:08:50.255 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=gqk
+23:08:50.320 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=sttopzbmfnj
+23:08:50.386 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=aaa
+23:08:50.451 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=gyebcufn
+23:08:50.517 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=lkeuwcyyqztjtfdv
+23:08:50.582 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=urylecokxaaym
+23:08:50.646 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=qjzalsyqfvcv
+23:08:50.710 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=lqlzvps
+23:08:50.773 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=ktasxaarff
+23:08:50.842 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=aaa
+23:08:50.905 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=vocakjm
+23:08:50.973 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=xjhwztfyf
+23:08:51.036 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=mtplpm
+23:08:51.100 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=mnyhwvj
+23:08:51.164 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=kauf
+23:08:51.236 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=nzosmlsgg
+23:08:51.302 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=jroiznvbdyedq
+23:08:51.371 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=nqdgakwew
+23:08:51.438 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=esj
+23:08:51.529 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=ubbrrqxqhqm
+23:08:51.596 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=cmapi
+23:08:51.661 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=jrlphcjrd
+23:08:51.728 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=htlneyljr
+23:08:51.795 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=vxoiqjr
+23:08:51.863 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=nrdktqbbsrp
+23:08:51.932 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=orhbgiwopkggvxpl
+23:08:52.001 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=pxqwzq
+23:08:52.066 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=igfxk
+23:08:52.132 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=fszduxavtdq
+23:08:52.199 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=jnrso
+23:08:52.270 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=shezctubnaluhxzsook
+23:08:52.336 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=pzefoarotczschj
+23:08:52.402 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=wugbd
+23:08:52.468 [main] INFO com.gov.security.service.UserService -- 用户注册成功: username=fopyl
+timestamp = 2026-04-06T23:08:52.469334, RegistrationPropertyTest:registeredUserHasRoleCitizen = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 4          | # of all combined edge cases
+edge-cases#tried = 1          | # of edge cases tried in current run
+seed = -1148162811469073360   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="digitsOnlyPasswordIsRejected" classname="com.gov.security.property.RegistrationPropertyTest" time="0.003">
+    <system-out><![CDATA[timestamp = 2026-04-06T23:08:52.473342200, RegistrationPropertyTest:digitsOnlyPasswordIsRejected = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 2          | # of all combined edge cases
+edge-cases#tried = 2          | # of edge cases tried in current run
+seed = 4798267765987815205    | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="tooShortPasswordIsRejected" classname="com.gov.security.property.RegistrationPropertyTest" time="0.006">
+    <system-out><![CDATA[timestamp = 2026-04-06T23:08:52.479788, RegistrationPropertyTest:tooShortPasswordIsRejected = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 2          | # of all combined edge cases
+edge-cases#tried = 2          | # of edge cases tried in current run
+seed = -2336857932081932907   | random seed to reproduce generated values
+
+
+]]></system-out>
+  </testcase>
+</testsuite>
